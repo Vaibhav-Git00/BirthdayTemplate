@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 20th Birthday!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="landing-section">
+        <div class="background-elements">
+            <div class="balloon balloon-1"></div>
+            <div class="balloon balloon-2"></div>
+            <div class="balloon balloon-3"></div>
+            <div class="balloon balloon-4"></div>
+            <div class="balloon balloon-5"></div>
+        </div>
+        
+        <div class="confetti-container"></div>
+        
+        <div class="content-wrapper">
+            <div class="main-text">
+                <h1 class="birthday-title">
+                    <span class="word">Happy</span>
+                    <span class="word">20th Birthday</span>
+                    <span class="name-placeholder">Beautiful!</span>
+                </h1>
+                <p class="intro-text">
+                    Welcome to your twenties! Today is all about celebrating the amazing woman you've become! 🎉
+                </p>
+                <button class="celebrate-btn">
+                    <span>Let's Celebrate!</span>
+                    <div class="btn-sparkle"></div>
+                </button>
+            </div>
+        </div>
+        
+        <div class="floating-hearts">
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+        </div>
+    </section>
+    
+    <section class="cake-section">
+        <div class="cake-container">
+            <h2 class="cake-title">Make a Wish & Cut Your 20th Birthday Cake!</h2>
+            
+            <div class="cake-wrapper">
+                <div class="cake">
+                    <div class="cake-layer cake-bottom">
+                        <div class="cake-decoration"></div>
+                    </div>
+                    <div class="cake-layer cake-middle">
+                        <div class="cake-decoration"></div>
+                    </div>
+                    <div class="cake-layer cake-top">
+                        <div class="cake-decoration"></div>
+                    </div>
+                    
+                    <div class="candles-container">
+                        <div class="candle" data-candle="1">
+                            <div class="candle-stick"></div>
+                            <div class="flame"></div>
+                        </div>
+                        <div class="candle" data-candle="2">
+                            <div class="candle-stick"></div>
+                            <div class="flame"></div>
+                        </div>
+                        <div class="candle" data-candle="3">
+                            <div class="candle-stick"></div>
+                            <div class="flame"></div>
+                        </div>
+                        <div class="candle" data-candle="4">
+                            <div class="candle-stick"></div>
+                            <div class="flame"></div>
+                        </div>
+                        <div class="candle" data-candle="5">
+                            <div class="candle-stick"></div>
+                            <div class="flame"></div>
+                        </div>
+                        <div class="candle" data-candle="6">
+                            <div class="candle-stick"></div>
+                            <div class="flame"></div>
+                        </div>
+                        <div class="candle" data-candle="7">
+                            <div class="candle-stick"></div>
+                            <div class="flame"></div>
+                        </div>
+                        <div class="candle" data-candle="8">
+                            <div class="candle-stick"></div>
+                            <div class="flame"></div>
+                        </div>
+                        <div class="candle" data-candle="9">
+                            <div class="candle-stick"></div>
+                            <div class="flame"></div>
+                        </div>
+                        <div class="candle" data-candle="10">
+                            <div class="candle-stick"></div>
+                            <div class="flame"></div>
+                        </div>
+                        <div class="candle" data-candle="11">
+                            <div class="candle-stick"></div>
+                            <div class="flame"></div>
+                        </div>
+                        <div class="candle" data-candle="12">
+                            <div class="candle-stick"></div>
+                            <div class="flame"></div>
+                        </div>
+                        <div class="candle" data-candle="13">
+                            <div class="candle-stick"></div>
+                            <div class="flame"></div>
+                        </div>
+                        <div class="candle" data-candle="14">
+                            <div class="candle-stick"></div>
+                            <div class="flame"></div>
+                        </div>
+                        <div class="candle" data-candle="15">
+                            <div class="candle-stick"></div>
+                            <div class="flame"></div>
+                        </div>
+                        <div class="candle" data-candle="16">
+                            <div class="candle-stick"></div>
+                            <div class="flame"></div>
+                        </div>
+                        <div class="candle" data-candle="17">
+                            <div class="candle-stick"></div>
+                            <div class="flame"></div>
+                        </div>
+                        <div class="candle" data-candle="18">
+                            <div class="candle-stick"></div>
+                            <div class="flame"></div>
+                        </div>
+                        <div class="candle" data-candle="19">
+                            <div class="candle-stick"></div>
+                            <div class="flame"></div>
+                        </div>
+                        <div class="candle" data-candle="20">
+                            <div class="candle-stick"></div>
+                            <div class="flame"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="cake-cut-line"></div>
+                </div>
+                
+                <div class="cake-slice">
+                    <div class="slice-layer slice-bottom"></div>
+                    <div class="slice-layer slice-middle"></div>
+                    <div class="slice-layer slice-top"></div>
+                </div>
+            </div>
+            
+            <div class="cake-controls">
+                <button class="light-candles-btn" id="lightCandlesBtn">
+                    <span>🕯️ Light Candles</span>
+                </button>
+                <button class="cut-cake-btn" id="cutCakeBtn" disabled>
+                    <span>🔪 Cut the Cake</span>
+                </button>
+                <button class="reset-cake-btn" id="resetCakeBtn">
+                    <span>🔄 Reset</span>
+                </button>
+            </div>
+            
+            <div class="wish-text">
+                <p>Click on individual candles to light all 20 candles, then cut the cake! ✨ Welcome to your twenties!</p>
+            </div>
+        </div>
+        
+        <div class="cake-confetti-container"></div>
+    </section>
+    
+    <section class="message-section">
+        <div class="message-container">
+            <div class="floating-elements">
+                <div class="floating-element heart-float">💖</div>
+                <div class="floating-element star-float">⭐</div>
+                <div class="floating-element gift-float">🎁</div>
+                <div class="floating-element balloon-float">🎈</div>
+                <div class="floating-element flower-float">🌸</div>
+                <div class="floating-element sparkle-float">✨</div>
+            </div>
+            
+            <div class="message-card">
+                <div class="card-header">
+                    <h2 class="card-title">A Special Message for You</h2>
+                    <div class="card-decoration">🌟</div>
+                </div>
+                
+                <div class="card-body">
+                    <div class="message-text">
+                        <p class="message-paragraph">
+                            On this beautiful milestone day, I want you to know how incredibly special you are. 
+                            Turning 20 is such an exciting moment - you're stepping into a new decade full of possibilities! 
+                            Your smile lights up every room you enter, and your kindness touches everyone around you.
+                        </p>
+                        
+                        <p class="message-paragraph">
+                            May your twenties be filled with endless joy, amazing adventures, beautiful moments, 
+                            and all the happiness your heart can hold. This decade is going to be incredible for you - 
+                            you deserve all the wonderful things life has to offer and so much more.
+                        </p>
+                        
+                        <p class="message-paragraph">
+                            Thank you for being such an amazing person and for bringing so much light into this world. 
+                            Here's to celebrating this milestone and all the exciting years ahead! Welcome to your twenties! 🎉
+                        </p>
+                    </div>
+                    
+                    <div class="message-signature">
+                        <div class="signature-line">With love and best wishes,</div>
+                        <div class="signature-name">Your Special Someone 💕</div>
+                    </div>
+                </div>
+                
+                <div class="card-footer">
+                    <div class="birthday-date">Happy 20th Birthday! 🎂</div>
+                </div>
+            </div>
+            
+            <div class="message-effects">
+                <div class="glow-effect"></div>
+                <div class="sparkle-trail"></div>
+            </div>
+        </div>
+        
+        <div class="message-confetti-container"></div>
+    </section>
+    
+    <section class="memories-section">
+        <div class="memories-container">
+            <div class="memories-header">
+                <h2 class="memories-title">Beautiful Memories</h2>
+                <p class="memories-subtitle">A collection of our wonderful moments together ✨</p>
+            </div>
+            
+            <div class="gallery-controls">
+                <button class="gallery-btn" id="gridViewBtn" data-view="grid">
+                    <span>📱 Grid View</span>
+                </button>
+                <button class="gallery-btn active" id="sliderViewBtn" data-view="slider">
+                    <span>🎞️ Slider View</span>
+                </button>
+            </div>
+            
+            <!-- Grid View -->
+            <div class="memories-grid" id="memoriesGrid">
+                <div class="memory-card" data-memory="1">
+                    <div class="memory-image">
+                        <div class="placeholder-img birthday-moment">🎂</div>
+                        <div class="memory-overlay">
+                            <div class="memory-caption">
+                                <h3>Birthday Celebration</h3>
+                                <p>Your special day filled with joy and laughter</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="memory-card" data-memory="2">
+                    <div class="memory-image">
+                        <div class="placeholder-img adventure-moment">🌟</div>
+                        <div class="memory-overlay">
+                            <div class="memory-caption">
+                                <h3>Adventure Together</h3>
+                                <p>Exploring new places and making memories</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="memory-card" data-memory="3">
+                    <div class="memory-image">
+                        <div class="placeholder-img fun-moment">🎉</div>
+                        <div class="memory-overlay">
+                            <div class="memory-caption">
+                                <h3>Fun Times</h3>
+                                <p>Laughing until our stomachs hurt</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="memory-card" data-memory="4">
+                    <div class="memory-image">
+                        <div class="placeholder-img sweet-moment">💝</div>
+                        <div class="memory-overlay">
+                            <div class="memory-caption">
+                                <h3>Sweet Moments</h3>
+                                <p>Quiet times that mean the most</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="memory-card" data-memory="5">
+                    <div class="memory-image">
+                        <div class="placeholder-img celebration-moment">🎊</div>
+                        <div class="memory-overlay">
+                            <div class="memory-caption">
+                                <h3>Celebrations</h3>
+                                <p>Every milestone we've shared together</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="memory-card" data-memory="6">
+                    <div class="memory-image">
+                        <div class="placeholder-img journey-moment">🌈</div>
+                        <div class="memory-overlay">
+                            <div class="memory-caption">
+                                <h3>Our Journey</h3>
+                                <p>The beautiful path we've traveled</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slider View -->
+            <div class="memories-slider" id="memoriesSlider" style="display: none;">
+                <div class="slider-container">
+                    <div class="slider-track" id="sliderTrack">
+                        <div class="slider-item active" data-slide="0">
+                            <div class="slide-image birthday-moment">🎂</div>
+                            <div class="slide-content">
+                                <h3>Birthday Celebration</h3>
+                                <p>Your special day filled with joy and laughter. Every moment was magical, from the morning surprise to the evening celebration!</p>
+                            </div>
+                        </div>
+                        
+                        <div class="slider-item" data-slide="1">
+                            <div class="slide-image adventure-moment">🌟</div>
+                            <div class="slide-content">
+                                <h3>Adventure Together</h3>
+                                <p>Exploring new places and making memories. Each adventure brought us closer and filled our hearts with wonder.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="slider-item" data-slide="2">
+                            <div class="slide-image fun-moment">🎉</div>
+                            <div class="slide-content">
+                                <h3>Fun Times</h3>
+                                <p>Laughing until our stomachs hurt. These silly moments are the ones that make life truly beautiful.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="slider-item" data-slide="3">
+                            <div class="slide-image sweet-moment">💝</div>
+                            <div class="slide-content">
+                                <h3>Sweet Moments</h3>
+                                <p>Quiet times that mean the most. Sometimes the smallest gestures create the biggest memories.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="slider-item" data-slide="4">
+                            <div class="slide-image celebration-moment">🎊</div>
+                            <div class="slide-content">
+                                <h3>Celebrations</h3>
+                                <p>Every milestone we've shared together. From small victories to big achievements, we've celebrated them all.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="slider-item" data-slide="5">
+                            <div class="slide-image journey-moment">🌈</div>
+                            <div class="slide-content">
+                                <h3>Our Journey</h3>
+                                <p>The beautiful path we've traveled. Every step has been worth it with you by my side.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slider-controls">
+                    <button class="slider-btn prev-btn" id="prevBtn">❮</button>
+                    <div class="slider-dots" id="sliderDots">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
+                        <span class="dot" data-slide="3"></span>
+                        <span class="dot" data-slide="4"></span>
+                        <span class="dot" data-slide="5"></span>
+                    </div>
+                    <button class="slider-btn next-btn" id="nextBtn">❯</button>
+                </div>
+            </div>
+            
+            <div class="memories-navigation">
+                <button class="memories-nav-btn" id="backToMessageBtn">
+                    <span>← Back to Message</span>
+                </button>
+                <button class="memories-nav-btn" id="backToHomeBtn">
+                    <span>🏠 Home</span>
+                </button>
+            </div>
+        </div>
+        
+        <div class="memories-confetti-container"></div>
+    </section>
+    
+    <section class="love-section">
+        <div class="love-container">
+            <div class="love-header">
+                <h2 class="love-title">Things I Love About You</h2>
+                <p class="love-subtitle">Every single thing that makes you extraordinary 💕</p>
+            </div>
+            
+            <div class="love-content">
+                <div class="love-list" id="loveList">
+                    <div class="love-item" data-item="1">
+                        <div class="love-icon">😊</div>
+                        <div class="love-text">
+                            <h3>Your Beautiful Smile</h3>
+                            <p>It lights up every room and makes even the darkest days brighter. Your smile is pure magic!</p>
+                        </div>
+                        <div class="love-heart">💖</div>
+                    </div>
+                    
+                    <div class="love-item" data-item="2">
+                        <div class="love-icon">🌟</div>
+                        <div class="love-text">
+                            <h3>Your Kind Heart</h3>
+                            <p>The way you care for everyone around you shows what a beautiful soul you have. Your kindness inspires me every day.</p>
+                        </div>
+                        <div class="love-heart">💝</div>
+                    </div>
+                    
+                    <div class="love-item" data-item="3">
+                        <div class="love-icon">😂</div>
+                        <div class="love-text">
+                            <h3>Your Amazing Laugh</h3>
+                            <p>That contagious laugh that makes everyone around you happy. You have the power to turn any moment into joy!</p>
+                        </div>
+                        <div class="love-heart">💕</div>
+                    </div>
+                    
+                    <div class="love-item" data-item="4">
+                        <div class="love-icon">🎨</div>
+                        <div class="love-text">
+                            <h3>Your Creativity</h3>
+                            <p>The way you see the world through artistic eyes and create beauty wherever you go. You inspire creativity in others!</p>
+                        </div>
+                        <div class="love-heart">💞</div>
+                    </div>
+                    
+                    <div class="love-item" data-item="5">
+                        <div class="love-icon">🤗</div>
+                        <div class="love-text">
+                            <h3>Your Warm Hugs</h3>
+                            <p>Those perfect hugs that make everything better. In your arms, I feel safe, loved, and completely at peace.</p>
+                        </div>
+                        <div class="love-heart">💓</div>
+                    </div>
+                    
+                    <div class="love-item" data-item="6">
+                        <div class="love-icon">💪</div>
+                        <div class="love-text">
+                            <h3>Your Inner Strength</h3>
+                            <p>How you face challenges with grace and never give up. Your resilience is truly inspiring and admirable.</p>
+                        </div>
+                        <div class="love-heart">💗</div>
+                    </div>
+                    
+                    <div class="love-item" data-item="7">
+                        <div class="love-icon">🌸</div>
+                        <div class="love-text">
+                            <h3>Your Gentle Nature</h3>
+                            <p>The way you handle everything with such care and tenderness. Your gentle spirit is a gift to this world.</p>
+                        </div>
+                        <div class="love-heart">💖</div>
+                    </div>
+                    
+                    <div class="love-item" data-item="8">
+                        <div class="love-icon">🎭</div>
+                        <div class="love-text">
+                            <h3>Your Sense of Humor</h3>
+                            <p>Those silly jokes and funny moments that make life so much more enjoyable. You know exactly how to make me smile!</p>
+                        </div>
+                        <div class="love-heart">💘</div>
+                    </div>
+                    
+                    <div class="love-item" data-item="9">
+                        <div class="love-icon">🌅</div>
+                        <div class="love-text">
+                            <h3>Your Bright Future at 20</h3>
+                            <p>The way you embrace life with such enthusiasm and grace. At 20, you're blossoming into an incredible woman with unlimited potential!</p>
+                        </div>
+                        <div class="love-heart">💝</div>
+                    </div>
+                    
+                    <div class="love-item" data-item="10">
+                        <div class="love-icon">✨</div>
+                        <div class="love-text">
+                            <h3>Your Amazing Twenties Ahead</h3>
+                            <p>All the incredible adventures, growth, and possibilities that await you in this exciting new decade. Your twenties are going to be absolutely magical!</p>
+                        </div>
+                        <div class="love-heart">💕</div>
+                    </div>
+                </div>
+                
+                <div class="love-summary">
+                    <div class="summary-card">
+                        <h3>And So Much More...</h3>
+                        <p>These are just a few of the countless reasons why turning 20 is so special for you. 
+                        Your twenties are going to be filled with incredible adventures, growth, and joy. 
+                        You are truly one of a kind! 🌟💖</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="love-navigation">
+                <button class="love-nav-btn" id="backToMemoriesBtn">
+                    <span>← Back to Memories</span>
+                </button>
+                <button class="love-nav-btn" id="loveCelebrationBtn">
+                    <span>🎉 Celebrate You!</span>
+                </button>
+                <button class="love-nav-btn" id="loveBackToHomeBtn">
+                    <span>🏠 Home</span>
+                </button>
+            </div>
+        </div>
+        
+        <div class="love-floating-hearts">
+            <div class="floating-heart">💖</div>
+            <div class="floating-heart">💕</div>
+            <div class="floating-heart">💝</div>
+            <div class="floating-heart">💞</div>
+            <div class="floating-heart">💓</div>
+            <div class="floating-heart">💗</div>
+            <div class="floating-heart">💘</div>
+            <div class="floating-heart">💖</div>
+        </div>
+        
+        <div class="love-confetti-container"></div>
+    </section>
+    
+    <section class="ending-section">
+        <div class="ending-container">
+            <div class="fireworks-canvas" id="fireworksCanvas"></div>
+            
+            <div class="ending-content">
+                <div class="final-message">
+                    <h1 class="ending-title">Thank You for Being You</h1>
+                    <div class="ending-subtitle">
+                        <p>You make this world a brighter, more beautiful place simply by existing ✨</p>
+                    </div>
+                    
+                    <div class="ending-wish">
+                        <div class="wish-card">
+                            <div class="wish-icon">🌟</div>
+                            <div class="wish-text">
+                                <h3>My 20th Birthday Wish for You</h3>
+                                <p>May your twenties be the most amazing decade yet - filled with love, laughter, success, 
+                                and all your dreams coming true. You deserve every wonderful thing that's coming your way!</p>
+                            </div>
+                        </div>
+                        
+                        <div class="wish-card">
+                            <div class="wish-icon">💫</div>
+                            <div class="wish-text">
+                                <h3>Always Remember</h3>
+                                <p>You are loved, you are special, and you are enough just as you are. 
+                                Never forget how amazing you truly are!</p>
+                            </div>
+                        </div>
+                        
+                        <div class="wish-card">
+                            <div class="wish-icon">🎉</div>
+                            <div class="wish-text">
+                                <h3>Welcome to Your Twenties</h3>
+                                <p>This is just the beginning of an incredible journey. At 20, you have the whole world 
+                                ahead of you, and I can't wait to see all the amazing things you'll accomplish!</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="ending-signature">
+                        <p>With all my love and best wishes,</p>
+                        <div class="signature">Someone who thinks you're absolutely wonderful 💕</div>
+                    </div>
+                </div>
+                
+                <div class="ending-actions">
+                    <button class="ending-btn" id="createFireworksBtn">
+                        <span>🎆 Light Up the Sky!</span>
+                    </button>
+                    <button class="ending-btn" id="finalCelebrationBtn">
+                        <span>🎊 Grand Finale!</span>
+                    </button>
+                    <button class="ending-btn secondary" id="startOverBtn">
+                        <span>🔄 Celebrate Again</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="ending-decorations">
+                <div class="floating-star">⭐</div>
+                <div class="floating-star">✨</div>
+                <div class="floating-star">🌟</div>
+                <div class="floating-star">💫</div>
+                <div class="floating-star">⭐</div>
+                <div class="floating-star">✨</div>
+                <div class="floating-star">🌟</div>
+                <div class="floating-star">💫</div>
+                <div class="floating-star">⭐</div>
+                <div class="floating-star">✨</div>
+            </div>
+        </div>
+        
+        <div class="ending-confetti-container"></div>
+        <div class="sparkle-trail-container"></div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
